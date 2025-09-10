@@ -1,7 +1,11 @@
 Sprint 0 - Game Design Document : Tower Defense
+
 Naam: Sammy Verdam
+
 Klas: SD2A
+
 Datum: 8 – 9 - 2025
+
 1. Titel en elevator pitch
 Titel: Tower Blast
 Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen.
