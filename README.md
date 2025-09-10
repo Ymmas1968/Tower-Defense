@@ -5,9 +5,11 @@ Datum: 8 – 9 - 2025
 1. Titel en elevator pitch
 Titel: Tower Blast
 Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen.
-2. Wat maakt jouw tower defense uniek
+
+3. Wat maakt jouw tower defense uniek
 Zodra je dit spel speelt, gaat de tijd super snel van de plezier die je hebt in het spel.
-3. Schets van je level en UI
+
+5. Schets van je level en UI
  
 Toren 1 Patrick, halve map, 40%, Sniper.
 Toren 2 Edward, 4 meter, 20%, Schiet heel snel.
