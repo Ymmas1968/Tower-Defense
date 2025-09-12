@@ -11,17 +11,17 @@ Titel: Tower Blast
 Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen.
 
 2. Wat maakt jouw tower defense uniek
-Zodra je dit spel speelt, gaat de tijd super snel van de plezier die je hebt in het spel.
+Het wordt een 3D Tower defense. Dit spel wordt super leuk met een simpel design niet te complex.
 
 3. Schets van je level en UI
 ![Schets](https://github.com/Ymmas1968/Tower-Defense/blob/main/Schets.png)
-Toren 1 Patrick, halve map, 40%, Sniper.
-Toren 2 Edward, 4 meter, 20%, Schiet heel snel.
+Toren 1 Patrick, grote range, 40% damage, Sniper.
+Toren 2 Edward, Short range, 20% damage, Schiet heel snel.
 Eventuele extra torens:
 
 5. Vijanden
-Vijand 1 Jackson, sloom, 3 hit, groot.
-Vijand 2 Bill, snel, 1, super speed.
+Vijand 1 Jackson, sloom, 3 hit, groot character.
+Vijand 2 Bill, snel, 1 damage per hit, super snel.
 Eventuele extra vijanden:
 
 6. Gameplay loop
