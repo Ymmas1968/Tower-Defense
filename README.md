@@ -115,4 +115,4 @@ Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
 •	Keuze: UI toont levens, geld en wave nummer.
 •	Risico: Dat UI niet goed wordt bijgewerkt of overlapt met de game view.
 •	Oplossing: Gebruik van canvas en text components, en scripts die UI updaten bij elke change.
-•	Acceptatie:
+•	Acceptatie: Speler ziet altijd hoeveel levens, geld en welke wave bezig is.
