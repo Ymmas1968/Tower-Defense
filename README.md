@@ -95,7 +95,7 @@ Voorbeeld ingevuld bij
 
 •	Risico: dat ze van het pad kunnen raken als ik de waypoint niet heb geplaatst
 
-•	Oplossing: Misschien de waypoint hoger plaatsen
+•	Oplossing: De waypoint hoger plaatsen
 
 •	Acceptatie: wanneer die de 3 waypoints goed volgt
 
