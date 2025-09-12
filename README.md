@@ -88,31 +88,31 @@ Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
 •	Acceptatie: Tien vijanden lopen van start naar de goal zonder vastlopers en verbruiken elk één leven. Alle tien vijanden bereiken achtereenvolgens elk waypoint binnen één seconde na elkaar.
 
 11.1 Vijandbeweging over het pad
-•	Keuze:
-•	Risico:
-•	Oplossing:
-•	Acceptatie:
+•	Keuze: VIjdan beweging naar d waypoints
+•	Risico: dat ze van het pad kunnen raken als ik de waypoint niet heb geplaatst
+•	Oplossing: Misschien de waypoint hoger plaatsen
+•	Acceptatie: wanneer die de 3 waypoints goed volgt
 
 11.2 Doel kiezen en schieten
-•	Keuze:
-•	Risico:
-•	Oplossing:
-•	Acceptatie:
+•	Keuze: Torens kunnen vijanden selecteren en automatisch schieten.
+•	Risico: Dat torens geen doel kiezen of blijven richten op een vijand die al dood is.
+•	Oplossing: Script maken dat automatisch het dichtstbijzijnde vijand selecteert, en checkt of die nog leeft.
+•	Acceptatie:Torens schieten altijd op de dichtstbijzijnde vijand zolang die in range is.
 
 11.3 Waves en spawnen
-•	Keuze:
-•	Risico:
-•	Oplossing:
-•	Acceptatie:
+•	Keuze: Vijanden verschijnen in golven (bijvoorbeeld 10 vijanden per wave).
+•	Risico: Dat vijanden allemaal tegelijk spawnen of dat de timing verkeerd is.
+•	Oplossing: spawner script gebruiken die vijanden één voor één spawnt met een delay.
+•	Acceptatie: Vijanden verschijnen in de juiste volgorde en met een constante interval
 
 11.4 Economie en levens
-•	Keuze:
-•	Risico:
-•	Oplossing:
-•	Acceptatie:
+•	Keuze: Speler krijgt geld voor elke vijand die verslagen wordt, en verliest levens als vijanden de goal bereiken.
+•	Risico: Dat de balans niet klopt (te veel of te weinig geld/levens).
+•	Oplossing: Variabelen instelbaar maken in de Inspector zodat balans getest en aangepast kan worden.
+•	Acceptatie: Speler kan torens bouwen zolang hij genoeg geld heeft, en het spel eindigt als levens op 0 zijn.
 
 11.5 UI basis
-•	Keuze:
-•	Risico:
-•	Oplossing:
+•	Keuze: UI toont levens, geld en wave nummer.
+•	Risico: Dat UI niet goed wordt bijgewerkt of overlapt met de game view.
+•	Oplossing: Gebruik van canvas en text components, en scripts die UI updaten bij elke change.
 •	Acceptatie:
