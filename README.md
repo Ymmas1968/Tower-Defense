@@ -77,7 +77,9 @@ Noem een bestaande tower defense game die jou inspireert en wat je daarvan meene
 
 11. Technisch ontwerp mini
 Lees dit korte voorbeeld en vul daarna jouw eigen keuzes in.
-Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
+Voorbeeld ingevuld bij
+
+11.1 Vijandbeweging over het pad
 
 •	Keuze: Vijanden volgen punten A, B, C en daarna de goal.
 
@@ -88,6 +90,7 @@ Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
 •	Acceptatie: Tien vijanden lopen van start naar de goal zonder vastlopers en verbruiken elk één leven. Alle tien vijanden bereiken achtereenvolgens elk waypoint binnen één seconde na elkaar.
 
 11.1 Vijandbeweging over het pad
+
 •	Keuze: VIjdan beweging naar d waypoints
 
 •	Risico: dat ze van het pad kunnen raken als ik de waypoint niet heb geplaatst
@@ -117,6 +120,7 @@ Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
 •	Acceptatie: Vijanden verschijnen in de juiste volgorde en met een constante interval
 
 11.4 Economie en levens
+
 •	Keuze: Speler krijgt geld voor elke vijand die verslagen wordt, en verliest levens als vijanden de goal bereiken.
 
 •	Risico: Dat de balans niet klopt (te veel of te weinig geld/levens).
@@ -126,6 +130,7 @@ Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
 •	Acceptatie: Speler kan torens bouwen zolang hij genoeg geld heeft, en het spel eindigt als levens op 0 zijn.
 
 11.5 UI basis
+
 •	Keuze: UI toont levens, geld en wave nummer.
 
 •	Risico: Dat UI niet goed wordt bijgewerkt of overlapt met de game view.
