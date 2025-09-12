@@ -7,6 +7,7 @@ public class WayPoints : MonoBehaviour
     public float speed = 4f;
     public float rotationSpeed = 5f;
     public float reachThreshold = 0.1f; // How close before switching waypoints
+    [SerializeField] GameObject enemy;
 
     private int currentPoint = 0;
 
@@ -36,6 +37,7 @@ public class WayPoints : MonoBehaviour
             if (currentPoint >= wayPointList.Length)
             {
                 Destroy(gameObject); // Enemy vanishes (you could replace this with health reduction, etc.)
+                Instantiate(enemy, transform.position, transform.rotation);
             }
         }
     }
