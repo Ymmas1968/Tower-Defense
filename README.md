@@ -17,6 +17,7 @@ Het wordt een 3D Tower defense. Dit spel wordt super leuk met een simpel design 
 ![Schets](https://github.com/Ymmas1968/Tower-Defense/blob/main/Schets.png)
 
 DE RONDJES ZIJN DE TOWERS, JE KAN ZE OVERAL PLAATSEN MAAR DIT IS EEN VOORBEELD
+DE HOTBAR KWAM IK LATER MEE NA DAT IK DEZE SCHETS HEB GEMAAKT!
 
 Toren 1 Patrick, grote range, 40% damage, Sniper.
 
