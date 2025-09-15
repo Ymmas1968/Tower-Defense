@@ -4,7 +4,8 @@ public class DragTower : MonoBehaviour
 {
     private GameObject currentTower;   // The tower we're dragging
     public GameObject towerPrefab;     // The prefab you want to place
-    public LayerMask groundMask;       // The layer(s) where the tower can be placed
+    public LayerMask groundMask;
+    [SerializeField] private Camera camera;// The layer(s) where the tower can be placed
 
     void Update()
     {
@@ -18,6 +19,10 @@ public class DragTower : MonoBehaviour
             {
                 currentTower = null; // stop dragging
             }
+            if (Input.GetMouseButtonDown(1))
+            {
+                StartDraggingTower();   
+            }
         }
        
     }
@@ -29,7 +34,7 @@ public class DragTower : MonoBehaviour
 
     void MoveTowerToMouse()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, 100f, groundMask))
