@@ -15,8 +15,13 @@ Het wordt een 3D Tower defense. Dit spel wordt super leuk met een simpel design 
 
 3. Schets van je level en UI
 ![Schets](https://github.com/Ymmas1968/Tower-Defense/blob/main/Schets.png)
+
+DE RONDJES ZIJN DE TOWERS, JE KAN ZE OVERAL PLAATSEN MAAR DIT IS EEN VOORBEELD
+
 Toren 1 Patrick, grote range, 40% damage, Sniper.
+
 Toren 2 Edward, Short range, 20% damage, Schiet heel snel.
+
 Eventuele extra torens:
 
 5. Vijanden
