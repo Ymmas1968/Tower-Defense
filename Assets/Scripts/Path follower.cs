@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class WayPoints : MonoBehaviour
 {
     [Header("Waypoints Settings")]
-    public Transform[] wayPointList;  // Assign in Inspector
+    public List<Transform> wayPointList;  // Assign in Inspector
     public float speed = 4f;
     public float rotationSpeed = 5f;
     public float reachThreshold = 0.1f; // How close before switching waypoints
@@ -11,9 +12,19 @@ public class WayPoints : MonoBehaviour
 
     private int currentPoint = 0;
 
+    [SerializeField] private WayPointManager wayPointManager;
+
+    private void Start()
+    {
+
+
+        wayPointManager = GameObject.FindGameObjectWithTag("WaypointManager").GetComponent<WayPointManager>();
+        wayPointList = wayPointManager.GetWayPoints();  
+    }
+
     void Update()
     {
-        if (wayPointList.Length == 0) return;
+        if (wayPointList.Count == 0) return;
 
         Transform target = wayPointList[currentPoint];
 
@@ -34,10 +45,11 @@ public class WayPoints : MonoBehaviour
             currentPoint++;
 
             // If we reached the end of the path
-            if (currentPoint >= wayPointList.Length)
+            if (currentPoint >= wayPointList.Count)
             {
+                Instantiate(enemy, wayPointList[0].transform.position, transform.rotation);
                 Destroy(gameObject); // Enemy vanishes (you could replace this with health reduction, etc.)
-                Instantiate(enemy, transform.position, transform.rotation);
+               
             }
         }
     }

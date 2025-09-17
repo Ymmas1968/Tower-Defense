@@ -124,13 +124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7d2dd0fac8c9b4cacd9160e8f034ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPointList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  wayPointList: []
   speed: 4
   rotationSpeed: 5
   reachThreshold: 0.1
+  enemy: {fileID: 0}
+  wayPointManager: {fileID: 0}
 --- !u!54 &9114683586182774615
 Rigidbody:
   m_ObjectHideFlags: 0
