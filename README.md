@@ -73,6 +73,7 @@ De enemies krijgen meer HP en je gaat een ronde omhoog als alle enemies worden g
 •	Oplossing: De coinsysteem fixen
 
 9. Planning per sprint en mechanics
+
 Schrijf per sprint welke mechanics jij oplevert in de build. Denk aan voorbeelden zoals vijandbeweging over een pad, torens plaatsen, doel kiezen en schieten, waves starten, UI voor geld en levens, upgrades, jouw unieke feature.
 
 Sprint 1 mechanics: Het pad maken
@@ -86,11 +87,14 @@ Sprint 4 mechanics: Money mechanic
 Sprint 5 mechanics: Health mechanic 
 
 10. Inspiratie
-Mijn inspiratie is bloons td6
 
 Noem een bestaande tower defense game die jou inspireert en wat je daarvan meeneemt of juist vermijdt.
 
-11. Technisch ontwerp mini
+Mijn inspiratie is bloons td6
+
+
+
+12. Technisch ontwerp mini
 Lees dit korte voorbeeld en vul daarna jouw eigen keuzes in.
 Voorbeeld ingevuld bij
 
