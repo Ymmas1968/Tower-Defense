@@ -20,6 +20,8 @@ DE RONDJES ZIJN DE TOWERS, JE KAN ZE OVERAL PLAATSEN MAAR DIT IS EEN VOORBEELD!
 
 DE HOTBAR KWAM IK LATER MEE NA DAT IK DEZE SCHETS HEB GEMAAKT!
 
+4. Torens
+
 Toren 1 Patrick, 30 studs, 40% damage, Sniper.
 
 Toren 2 Edward, 10 studs, 20% damage, Schiet heel snel.
