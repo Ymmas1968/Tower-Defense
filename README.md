@@ -8,7 +8,7 @@ Datum: 8 – 9 - 2025
 
 1. Titel en elevator pitch
 Titel: Tower Blast
-Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen.
+Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen. Het speelt zich af in een boerderij achtige setting.
 
 2. Wat maakt jouw tower defense uniek
 Het wordt een 3D Tower defense. Dit spel wordt super leuk met een simpel design niet te complex.
