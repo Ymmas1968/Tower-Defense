@@ -47,6 +47,7 @@ Beschrijf in drie tot vijf stappen wat de speler steeds doet.
 4.	repeat
 
 7. Progressie
+
 De enemies krijgen meer HP en je gaat een ronde omhoog als alle enemies worden gekilled. 
 
 8. Risico’s en oplossingen volgens PIO
