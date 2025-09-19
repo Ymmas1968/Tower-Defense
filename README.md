@@ -32,14 +32,15 @@ Vijand 2 Bill, snel, 1 damage per hit, super snel.
 Eventuele extra vijanden:
 
 6. Gameplay loop
-Beschrijf in drie tot vijf stappen wat de speler steeds doet. 1.
-2.	Farm geld
+Beschrijf in drie tot vijf stappen wat de speler steeds doet. 
 
-3.	Plaats troops
+1.	Farm geld
 
-4.	Kill enemies
+2.	Plaats troops
 
-5.	repeat
+3.	Kill enemies
+
+4.	repeat
 
 7. Progressie
 De enemies krijgen meer HP en je gaat een ronde omhoog als alle enemies worden gekilled. 
