@@ -8,7 +8,7 @@ Datum: 8 – 9 - 2025
 
 1. Titel en elevator pitch
 Titel: Tower Blast
-Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen.
+Erg interactief, leuke towers en het is heel fast paced. Goed om je tijd te verdoen. Het speelt zich af in een boerderij achtige setting.
 
 2. Wat maakt jouw tower defense uniek
 Het wordt een 3D Tower defense. Dit spel wordt super leuk met een simpel design niet te complex.
@@ -20,6 +20,8 @@ DE RONDJES ZIJN DE TOWERS, JE KAN ZE OVERAL PLAATSEN MAAR DIT IS EEN VOORBEELD!
 
 DE HOTBAR KWAM IK LATER MEE NA DAT IK DEZE SCHETS HEB GEMAAKT!
 
+4. Torens
+
 Toren 1 Patrick, 30 studs, 40% damage, Sniper.
 
 Toren 2 Edward, 10 studs, 20% damage, Schiet heel snel.
@@ -27,21 +29,27 @@ Toren 2 Edward, 10 studs, 20% damage, Schiet heel snel.
 Eventuele extra torens:
 
 5. Vijanden
+
 Vijand 1 Jackson, sloom, 3 hit, groot character.
+
 Vijand 2 Bill, snel, 1 damage per hit, super snel.
+
 Eventuele extra vijanden:
 
 6. Gameplay loop
-Beschrijf in drie tot vijf stappen wat de speler steeds doet. 1.
-2.	Farm geld
 
-3.	Plaats troops
+Beschrijf in drie tot vijf stappen wat de speler steeds doet. 
 
-4.	Kill enemies
+1.	Farm geld
 
-5.	repeat
+2.	Plaats troops
+
+3.	Kill enemies
+
+4.	repeat
 
 7. Progressie
+
 De enemies krijgen meer HP en je gaat een ronde omhoog als alle enemies worden gekilled. 
 
 8. Risico’s en oplossingen volgens PIO
@@ -65,6 +73,7 @@ De enemies krijgen meer HP en je gaat een ronde omhoog als alle enemies worden g
 •	Oplossing: De coinsysteem fixen
 
 9. Planning per sprint en mechanics
+
 Schrijf per sprint welke mechanics jij oplevert in de build. Denk aan voorbeelden zoals vijandbeweging over een pad, torens plaatsen, doel kiezen en schieten, waves starten, UI voor geld en levens, upgrades, jouw unieke feature.
 
 Sprint 1 mechanics: Het pad maken
@@ -78,9 +87,12 @@ Sprint 4 mechanics: Money mechanic
 Sprint 5 mechanics: Health mechanic 
 
 10. Inspiratie
-Mijn inspiratie is bloons td6
 
 Noem een bestaande tower defense game die jou inspireert en wat je daarvan meeneemt of juist vermijdt.
+
+Mijn inspiratie is bloons td6
+
+
 
 11. Technisch ontwerp mini
 Lees dit korte voorbeeld en vul daarna jouw eigen keuzes in.
