@@ -94,7 +94,7 @@ Mijn inspiratie is bloons td6
 
 
 
-12. Technisch ontwerp mini
+11. Technisch ontwerp mini
 Lees dit korte voorbeeld en vul daarna jouw eigen keuzes in.
 Voorbeeld ingevuld bij
 
