@@ -27,11 +27,15 @@ Toren 2 Edward, 10 studs, 20% damage, Schiet heel snel.
 Eventuele extra torens:
 
 5. Vijanden
+
 Vijand 1 Jackson, sloom, 3 hit, groot character.
+
 Vijand 2 Bill, snel, 1 damage per hit, super snel.
+
 Eventuele extra vijanden:
 
 6. Gameplay loop
+
 Beschrijf in drie tot vijf stappen wat de speler steeds doet. 
 
 1.	Farm geld
