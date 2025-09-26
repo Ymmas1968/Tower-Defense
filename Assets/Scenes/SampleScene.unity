@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f402927ef5ffea84d9144f6de9c95a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 14540144121320505, guid: bf08f5707601d054d96d0d5a2820d83b, type: 3}
+  towerPrefab: {fileID: 5259948959824146544, guid: e9b1cfec6d4cb534d9012ea6d68aedcd, type: 3}
   groundMask:
     serializedVersion: 2
     m_Bits: 8
