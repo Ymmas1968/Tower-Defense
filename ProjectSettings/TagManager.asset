@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - WaypointManager
+  - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX

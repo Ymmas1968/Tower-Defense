@@ -1,82 +1,55 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class Tower : MonoBehaviour
+public class TowerDamage : MonoBehaviour
 {
-    [Header("Health Settings")]
-    public float health = 100f;
-    public float damageAmount = 25f;
-    public TextMeshProUGUI healthText;
+    [SerializeField] private int damageAmount = 10;
+    [SerializeField] private float range = 5f;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float fireRate = 1f;
 
-    [Header("Shooting Settings")]
-    public GameObject projectilePrefab; // Assign a bullet prefab in inspector
-    public Transform shootPoint; // Empty GameObject at the muzzle
-    public float fireRate = 2f; // seconds between shots
-    private float fireTimer = 0f;
+    private float fireCountdown = 0f;
+    private Transform target;
 
-    private Transform target; // Current enemy target
-
-    private void Start()
+    void Update()
     {
-        UpdateHealthText();
-    }
+        UpdateTarget();
 
-    private void Update()
-    {
-        // Count down time
-        fireTimer -= Time.deltaTime;
+        if (target == null) return;
 
-        // If we have a target and cooldown is ready -> shoot
-        if (target != null && fireTimer <= 0f)
+        fireCountdown -= Time.deltaTime;
+        if (fireCountdown <= 0f)
         {
             Shoot();
-            fireTimer = fireRate; // reset cooldown
+            fireCountdown = 1f / fireRate;
         }
     }
 
-    private void Shoot()
+    void UpdateTarget()
     {
-        GameObject bullet = Instantiate(projectilePrefab, shootPoint.position, shootPoint.rotation);
-        // If your projectile has a script for movement:
-        bullet.GetComponent<Rigidbody>().linearVelocity = (target.position - shootPoint.position).normalized * 10f;
-    }
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        float shortestDistance = Mathf.Infinity;
+        GameObject nearestEnemy = null;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
+        foreach (GameObject enemy in enemies)
         {
-            target = other.transform; // lock onto enemy
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Enemy") && other.transform == target)
-        {
-            target = null; // lost the enemy
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Projectile"))
-        {
-            health -= damageAmount;
-            UpdateHealthText();
-
-            if (health <= 0)
+            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance && distanceToEnemy <= range)
             {
-                health = 0;
-                Destroy(gameObject);
+                shortestDistance = distanceToEnemy;
+                nearestEnemy = enemy;
             }
         }
+
+        target = nearestEnemy != null ? nearestEnemy.transform : null;
     }
 
-    private void UpdateHealthText()
+    void Shoot()
     {
-        if (healthText != null)
-            healthText.text = "Health: " + Mathf.RoundToInt(health);
+        GameObject bulletGO = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        if (bullet != null)
+        {
+            bullet.Seek(target, damageAmount);
+        }
     }
 }
