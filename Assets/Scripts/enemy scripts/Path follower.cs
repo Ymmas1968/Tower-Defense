@@ -14,10 +14,10 @@ public class WayPoints : MonoBehaviour
 
     [SerializeField] private WayPointManager wayPointManager;
 
+    [SerializeField] private HealthManager healthManager;
+
     private void Start()
     {
-
-
         wayPointManager = GameObject.FindGameObjectWithTag("WaypointManager").GetComponent<WayPointManager>();
         wayPointList = wayPointManager.GetWayPoints();  
     }
@@ -44,13 +44,22 @@ public class WayPoints : MonoBehaviour
         {
             currentPoint++;
 
-            // If we reached the end of the path
+            // If we reached the last waypoint
             if (currentPoint >= wayPointList.Count)
             {
-                Instantiate(enemy, wayPointList[0].transform.position, transform.rotation);
-                Destroy(gameObject); // Enemy vanishes (you could replace this with health reduction, etc.)
-               
+                // Damage player/base
+                HealthManager.Instance.TakeDamage(1);
+
+                // Respawn enemy at start (if needed)
+                Instantiate(enemy, wayPointList[0].position, transform.rotation);
+
+                // Destroy this enemy
+                Destroy(gameObject);
             }
         }
+
+
+
+
     }
 }
