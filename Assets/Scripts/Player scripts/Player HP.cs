@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.Hierarchy;
 
 public class HealthManager : MonoBehaviour
 {
@@ -37,6 +38,4 @@ public class HealthManager : MonoBehaviour
         }
     }
 }
-
-
 

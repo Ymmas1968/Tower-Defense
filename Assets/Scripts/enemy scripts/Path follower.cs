@@ -19,7 +19,7 @@ public class WayPoints : MonoBehaviour
     private void Start()
     {
         wayPointManager = GameObject.FindGameObjectWithTag("WaypointManager").GetComponent<WayPointManager>();
-        wayPointList = wayPointManager.GetWayPoints();  
+        wayPointList = wayPointManager.GetWayPoints();
     }
 
     void Update()
@@ -47,19 +47,16 @@ public class WayPoints : MonoBehaviour
             // If we reached the last waypoint
             if (currentPoint >= wayPointList.Count)
             {
-                // Damage player/base
                 HealthManager.Instance.TakeDamage(1);
-
-                // Respawn enemy at start (if needed)
-                Instantiate(enemy, wayPointList[0].position, transform.rotation);
-
-                // Destroy this enemy
-                Destroy(gameObject);
+                Destroy(gameObject); // Let the spawner handle new enemies
             }
+            if (currentPoint >= wayPointList.Count)
+            {
+                HealthManager.Instance.TakeDamage(1);
+                Destroy(gameObject); // Let the spawner handle new enemies
+            }
+
+
         }
-
-
-
-
     }
 }
