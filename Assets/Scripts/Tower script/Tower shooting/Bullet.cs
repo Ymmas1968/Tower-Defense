@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     private Transform target;
     public float speed = 10f;
-    private int damage;
+    [SerializeField] private int damage;
 
 
     public void Seek(Transform _target, int _damage)
@@ -30,6 +30,18 @@ public class Bullet : MonoBehaviour
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            enemyHealth enemHealth = other.GetComponent<enemyHealth>();
+
+            enemHealth.TakeDamage(damage);
+        }
+
+        
+    }
+
 }
 
    

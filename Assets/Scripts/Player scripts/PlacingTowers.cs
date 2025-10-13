@@ -6,6 +6,7 @@ public class DragTower : MonoBehaviour
     public GameObject towerPrefab;     // The prefab you want to place
     public LayerMask groundMask;
     [SerializeField] private Camera camera;// The layer(s) where the tower can be placed
+    int towerCost;
 
     void Update()
     {
@@ -42,6 +43,18 @@ public class DragTower : MonoBehaviour
             Vector3 newPos = hit.point;
             newPos.y = 0; // Keep tower aligned with ground
             currentTower.transform.position = newPos;
+        }
+
+        void TryPlaceTower()
+        {
+            if (CurrencyManager.Instance.SpendCurrency(towerCost))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit hit))
+                {
+                    Instantiate(towerPrefab, hit.point, Quaternion.identity);
+                }
+            }
         }
     }
 }
