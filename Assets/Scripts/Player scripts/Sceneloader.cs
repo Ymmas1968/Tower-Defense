@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneChanger : MonoBehaviour
 {
 
     [SerializeField] private Button GameOver;
@@ -13,7 +13,7 @@ public class SceneManager : MonoBehaviour
     }
     void sceneswitch()
     {
-        SceneManager.LoadScene(mainMenuSceneName);
+        SceneManager.LoadScene("SampleScene");
     }
 
 }

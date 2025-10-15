@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f56718d96981a4d83acb3f0687811f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHP: 1
+  playerHP: 100
   healthText: {fileID: 1052352883}
 --- !u!4 &301972000
 Transform:
@@ -1639,7 +1639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -833}
+  m_AnchoredPosition: {x: 0, y: -959}
   m_SizeDelta: {x: 0, y: -1202.2773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1889180564
