@@ -34,7 +34,7 @@ public class HealthManager : MonoBehaviour
         {
             Debug.Log("Game Over!");
             // TODO: trigger game over screen or restart
-            SceneManager.LoadScene("GameOver");
+            //SceneManager.LoadScene("GameOver");
 
             Destroy(gameObject);
         }
