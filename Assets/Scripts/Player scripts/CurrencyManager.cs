@@ -4,53 +4,23 @@ using TMPro;
 
 public class CurrencyManager : MonoBehaviour
 {
-    public static CurrencyManager Instance;
+    public int money;
+    [SerializeField] private TextMeshProUGUI moneyTxt;
 
-    [Header("Currency Settings")]
-    public int startingCurrency = 100;
-    public int currentCurrency;
-
-    [Header("UI (optional)")]
-    public TextMeshProUGUI currencyText;
-
-    private void Awake()
+    public void AddMoney(int a)
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
+        money += a;
+        UpdateUi(); 
     }
 
-    void Start()
+    private void UpdateUi()
     {
-        currentCurrency = startingCurrency;
-        UpdateUI();
+        moneyTxt.text = money.ToString();
     }
 
-    public void AddCurrency(int amount)
+    public void RemoveMoney(int a)
     {
-        currentCurrency += amount;
-        UpdateUI();
-    }
-
-    public bool SpendCurrency(int amount)
-    {
-        if (currentCurrency >= amount)
-        {
-            currentCurrency -= amount;
-            UpdateUI();
-            return true;
-        }
-        else
-        {
-            Debug.Log("Not enough currency!");
-            return false;
-        }
-    }
-
-    void UpdateUI()
-    {
-        if (currencyText != null)
-            currencyText.text = "Currency: " + currentCurrency;
+        money -= a;
+        UpdateUi() ;
     }
 }

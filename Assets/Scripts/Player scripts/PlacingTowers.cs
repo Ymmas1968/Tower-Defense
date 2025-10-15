@@ -7,6 +7,9 @@ public class DragTower : MonoBehaviour
     public LayerMask groundMask;
     [SerializeField] private Camera camera;// The layer(s) where the tower can be placed
     int towerCost;
+    [SerializeField] CurrencyManager currencyManager;
+
+    private int moneyToRemove = 10;
 
     void Update()
     {
@@ -16,9 +19,11 @@ public class DragTower : MonoBehaviour
             MoveTowerToMouse();
 
             // Place tower on left mouse click
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && currencyManager.money > moneyToRemove)
             {
                 currentTower = null; // stop dragging
+                currencyManager.RemoveMoney(moneyToRemove);
+
             }
             if (Input.GetMouseButtonDown(1))
             {
@@ -47,14 +52,13 @@ public class DragTower : MonoBehaviour
 
         void TryPlaceTower()
         {
-            if (CurrencyManager.Instance.SpendCurrency(towerCost))
-            {
+            
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
                     Instantiate(towerPrefab, hit.point, Quaternion.identity);
                 }
-            }
+            
         }
     }
 }

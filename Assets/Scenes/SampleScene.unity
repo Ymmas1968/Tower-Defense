@@ -153,6 +153,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   camera: {fileID: 330585545}
+  currencyManager: {fileID: 1548283451}
 --- !u!4 &56557864
 Transform:
   m_ObjectHideFlags: 0
@@ -456,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f56718d96981a4d83acb3f0687811f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHP: 100
+  playerHP: 1
   healthText: {fileID: 1052352883}
 --- !u!4 &301972000
 Transform:
@@ -1497,7 +1498,7 @@ GameObject:
   - component: {fileID: 1548283451}
   m_Layer: 0
   m_Name: CurrencyManager
-  m_TagString: Untagged
+  m_TagString: CurrencyManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1514,9 +1515,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a629dac253fb844e8e63fc2fd0f1663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingCurrency: 100
-  currentCurrency: 0
-  currencyText: {fileID: 745456025}
+  money: 0
+  moneyTxt: {fileID: 745456025}
 --- !u!4 &1548283452
 Transform:
   m_ObjectHideFlags: 0

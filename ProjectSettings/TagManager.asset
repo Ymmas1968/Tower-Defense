@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Projectile
   - Tower
+  - CurrencyManager
   layers:
   - Default
   - TransparentFX

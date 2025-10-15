@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.Hierarchy;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class HealthManager : MonoBehaviour
         {
             Debug.Log("Game Over!");
             // TODO: trigger game over screen or restart
+            SceneManager.LoadScene("GameOver");
 
             Destroy(gameObject);
         }
