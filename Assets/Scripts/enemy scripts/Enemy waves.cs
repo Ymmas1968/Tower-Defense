@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
@@ -32,6 +33,10 @@ public class WaveSpawner : MonoBehaviour
         while (true)
         {
             currentWaveIndex++;
+            if(currentWaveIndex == 16)
+            {
+                SceneManager.LoadScene("YouWon");
+            }
             updateUiWave(); 
             Debug.Log($"Spawning Wave {currentWaveIndex} with {enemyCount} enemies");
 
