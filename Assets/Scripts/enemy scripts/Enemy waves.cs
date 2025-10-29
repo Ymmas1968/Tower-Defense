@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -13,9 +15,13 @@ public class WaveSpawner : MonoBehaviour
 
     private int currentWaveIndex = 0;
 
+    [SerializeField] private TextMeshProUGUI waveText;
+
     void Start()
     {
         StartCoroutine(SpawnWaves());
+        updateUiWave();
+
     }
 
     IEnumerator SpawnWaves()
@@ -26,6 +32,7 @@ public class WaveSpawner : MonoBehaviour
         while (true)
         {
             currentWaveIndex++;
+            updateUiWave(); 
             Debug.Log($"Spawning Wave {currentWaveIndex} with {enemyCount} enemies");
 
             // Spawn enemies for this wave
@@ -46,5 +53,10 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+    }
+
+    void updateUiWave()
+    {
+        waveText.text = "Wave: " + currentWaveIndex.ToString();
     }
 }

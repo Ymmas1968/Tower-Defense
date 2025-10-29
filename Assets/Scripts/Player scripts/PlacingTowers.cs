@@ -9,7 +9,7 @@ public class DragTower : MonoBehaviour
     int towerCost;
     [SerializeField] CurrencyManager currencyManager;
 
-    private int moneyToRemove = 10;
+    private int moneyToRemove = 85;
 
     void Update()
     {

@@ -21,7 +21,7 @@ public class enemyHealth : MonoBehaviour
     
     private void CheckHealth()
     {
-        if (health < 0)
+        if (health <= 0)
         {
             currencyManager.AddMoney(moneyToBeAddedOnDeath);
             Destroy(gameObject);
