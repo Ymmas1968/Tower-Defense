@@ -2536,6 +2536,10 @@ PrefabInstance:
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 1751689530255290066, guid: 746e23bbf00f8e740a518ea09760b15b, type: 3}
+    - target: {fileID: 5547058805205825127, guid: 54a080c38f419c34d914dc9dfcae9dbf, type: 3}
+      propertyPath: damageAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9009044911764081960, guid: 54a080c38f419c34d914dc9dfcae9dbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1255116
