@@ -4,6 +4,10 @@
 
 ![Placing](https://github.com/Ymmas1968/Tower-Defense/blob/main/TOWERPLACING.gif)
 
+# Shooting + Projectile
+
+![shooting](https://github.com/Ymmas1968/Tower-Defense/blob/main/Tower%20Blast%202025-11-03%2018-59-36.gif)
+
 
 
 
