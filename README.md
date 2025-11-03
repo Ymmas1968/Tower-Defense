@@ -2,8 +2,7 @@
 
 # Tower placing
 
-
-
+!(Placing)[https://github.com/Ymmas1968/Tower-Defense/blob/main/TOWERPLACING.gif)
 
 
 
