@@ -16,6 +16,10 @@
 
 ![eco](https://github.com/Ymmas1968/Tower-Defense/blob/main/Eco%20system.gif)
 
+# Wave system
+
+![wave](https://github.com/Ymmas1968/Tower-Defense/blob/main/Waves.gif)
+
 
 
 
